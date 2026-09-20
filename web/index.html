@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indoor CO₂ Steady-State Calculator</title>
+<meta name="description" content="Calculate steady-state indoor CO₂ concentration and the EN 16798-1:2019 indoor air quality category from room size, ventilation rate and occupancy.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23127a3e'/><text x='50' y='68' font-size='52' font-family='Arial,sans-serif' font-weight='bold' fill='white' text-anchor='middle'>CO</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page">
+
+  <header class="page-header">
+    <h1>Indoor CO<sub>2</sub> Steady-State Calculator</h1>
+    <p class="subtitle">Comfort categories according to EN&nbsp;16798-1:2019</p>
+  </header>
+
+  <div class="panels">
+
+    <section class="panel">
+      <h2 class="panel-title">Input parameters</h2>
+      <form id="input-form" autocomplete="off"></form>
+      <p class="hint">Results update automatically as you change a value.</p>
+      <p class="error" id="error-message" role="alert" hidden></p>
+    </section>
+
+    <section class="panel">
+      <h2 class="panel-title">Calculated results</h2>
+      <dl class="results">
+        <dt>Room volume</dt>
+        <dd id="result-volume">&mdash;</dd>
+
+        <dt>Ventilation airflow</dt>
+        <dd id="result-airflow">&mdash;</dd>
+
+        <dt>Total CO<sub>2</sub> generation</dt>
+        <dd id="result-generation">&mdash;</dd>
+
+        <dt>Steady-state indoor CO<sub>2</sub></dt>
+        <dd id="result-indoor" class="result-headline">&mdash;</dd>
+
+        <dt>CO<sub>2</sub> increase</dt>
+        <dd id="result-delta">&mdash;</dd>
+
+        <dt>EN 16798-1 category</dt>
+        <dd id="result-category" class="result-category">&mdash;</dd>
+      </dl>
+    </section>
+
+  </div>
+
+  <section class="panel gauge-panel">
+    <h2 class="panel-title">EN 16798-1:2019 indoor CO<sub>2</sub> comfort zones</h2>
+    <p class="limits" id="limits-line"></p>
+    <div class="gauge-scroll">
+      <svg id="gauge" viewBox="0 0 730 210" role="img"
+           aria-label="Gauge showing the indoor CO2 concentration against the EN 16798-1 comfort categories"></svg>
+    </div>
+    <p class="formula">
+      Model: C<sub>ss</sub> = C<sub>out</sub> + (N &times; G<sub>p</sub> / Q) &times; 10<sup>6</sup>,
+      with Q = ACH &times; V
+    </p>
+  </section>
+
+  <footer class="page-footer">
+    <p>
+      Steady-state, well-mixed single-zone mass balance. Categories follow the
+      EN&nbsp;16798-1:2019 CO<sub>2</sub> increase above outdoor concentration
+      (I&nbsp;&le;&nbsp;550, II&nbsp;&le;&nbsp;800, III&nbsp;&le;&nbsp;1350, IV&nbsp;&gt;&nbsp;1350&nbsp;ppm).
+    </p>
+    <p>All calculations run in your browser. Nothing is uploaded or stored.</p>
+  </footer>
+
+</main>
+
+<script src="model.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
