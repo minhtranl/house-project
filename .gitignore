@@ -1,0 +1,33 @@
+# ---------------------------------------------------------------
+# Reference material
+#
+# Kept locally but not published: the folder is ~33 MB and holds
+# third-party papers and internal project documents. The repository
+# already carries a curated `references/` folder for the sources
+# that are meant to be public.
+# ---------------------------------------------------------------
+Ref - IndoorVOC,CO2,RH in room/
+
+# ---------------------------------------------------------------
+# PyCharm scaffolding
+# `main.py` is the untouched PyCharm sample stub, not project code.
+# ---------------------------------------------------------------
+.idea/
+main.py
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# ---------------------------------------------------------------
+# Editors and operating systems
+# ---------------------------------------------------------------
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
