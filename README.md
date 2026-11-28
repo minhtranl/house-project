@@ -1,11 +1,11 @@
-# About  
-I built this website as an independent project in 2025–2026 to make an indoor-air-quality model easy for anyone to use. The model comes from the research of Dr. Anh Dung Tran Le (Université de Picardie Jules Verne), and the Python desktop version is the reference implementation developed under his guidance. Dr. Ngoc Khanh Nguyen (King's College London) advised on code design. — Minh Tran
-
 # Indoor CO₂ Steady-State Calculator
 
 A calculator for the steady-state indoor CO₂ concentration of a mechanically or
 naturally ventilated room, classified against the comfort categories of
-**EN 16798-1:2019**.
+**EN 16798-1:2019**.  
+
+## About  
+I built this website as an independent project in 2025–2026 to make an indoor-air-quality model easy for anyone to use. The model comes from the research of Dr. Anh Dung Tran Le (Université de Picardie Jules Verne), and the Python desktop version is the reference implementation developed under his guidance. Dr. Ngoc Khanh Nguyen (King's College London) advised on code design. — Minh Tran  
 
 It exists in two forms that compute identical results:
 
