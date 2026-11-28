@@ -207,7 +207,8 @@ The model and comfort categories are based on:
 
 ---
 
-## Licence
+## License
 
-No licence has been chosen yet. The reference PDFs in `references/` are the
-property of their respective authors and publishers.
+The code in this repository is released under the [MIT License](LICENSE).
+The research papers and standard cited above remain the property of their
+authors and publishers.
