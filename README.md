@@ -183,11 +183,27 @@ input is stored — so there is no database, no accounts and no personal data.
 
 ## References
 
-Background material for the model is in [`references/`](references/):
+## References
 
-- Persily, A. — *Evaluating building IAQ and ventilation with indoor carbon dioxide*
-- TRAN LE et al. — Indoor Air 2016 conference paper and poster (ID629)
-- ECA Report No. 11 — sensory evaluation and perceived air quality
+The model and comfort categories are based on:
+
+1. Tran Le, A. D., Douzane, O., Promis, G., Samri, D., Roucoult, J.-M., Nguyen, A. T.,
+   Lahoche, L., & Langlet, T. (2016). *A comparison of the effect of carbon dioxide and
+   relative humidity sensitive ventilation systems on indoor air quality, hygrothermal
+   and energy performance in an office room made of hemp concrete.* Proceedings of
+   Indoor Air 2016, the 14th International Conference of Indoor Air Quality and Climate,
+   Ghent, Belgium, July 3–8, 2016, Paper ID629.
+
+2. Persily, A. K. (1997). *Evaluating building IAQ and ventilation with indoor carbon
+   dioxide.* ASHRAE Transactions, 103(2).
+   [NIST record](https://firedoc.nist.gov/article/53cyXYQBWEcjUZEYzsk4)
+
+3. European Concerted Action "Indoor Air Quality & Its Impact on Man" (1992).
+   *Report No. 11: Guidelines for Ventilation Requirements in Buildings.*
+   Commission of the European Communities, Luxembourg, EUR 14449 EN.
+
+4. CEN (2019). *EN 16798-1:2019 Energy performance of buildings — Ventilation for
+   buildings — Part 1: Indoor environmental input parameters.*
 
 ---
 
