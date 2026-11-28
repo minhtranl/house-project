@@ -183,8 +183,6 @@ input is stored — so there is no database, no accounts and no personal data.
 
 ## References
 
-## References
-
 The model and comfort categories are based on:
 
 1. Tran Le, A. D., Douzane, O., Promis, G., Samri, D., Roucoult, J.-M., Nguyen, A. T.,
