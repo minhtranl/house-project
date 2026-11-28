@@ -42,20 +42,9 @@ then reload <http://localhost:8000/parity-test.html> and confirm it says PASS.
 
 ## Deploying
 
-The site is fully static, so the publish directory is just `web`.
-
-### Cloudflare Pages (recommended)
-
-1. Push this project to a GitHub repository.
-2. At <https://dash.cloudflare.com> → Workers & Pages → Create → Pages →
-   Connect to Git, and pick the repository.
-3. Build settings:
-   - Framework preset: **None**
-   - Build command: *(leave empty)*
-   - Build output directory: `web`
-4. Save and Deploy. You get `https://<project>.pages.dev` with HTTPS.
-
-Every later `git push` redeploys automatically.
+The site is published automatically to GitHub Pages by
+`.github/workflows/deploy.yml` on every push to `main`.
+See the main [README](../README.md#how-the-site-is-published) for details.
 
 ### Netlify
 
